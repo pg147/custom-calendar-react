@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#F92E43",
+        tile: "#F8F8F8"
+      },
       fontFamily: {
         custom: ['DM Sans', 'sans serif']
       }
