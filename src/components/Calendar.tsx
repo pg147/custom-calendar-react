@@ -76,7 +76,7 @@ const Calendar: React.FC<Props> = ({ value = new Date(), onChange }) => {
                 {Array.from({ length: numofDays }).map((_, index) => {
                     const date = index + 1;
 
-                    return <Cell className={`p-0 h-8 w-8 lg:h-10 lg:w-10 px-3 py-2 flex items-center justify-center ${( isActiveIndex === index ) ? 'bg-primary text-center mx-auto text-white hover:bg-primary/90' : ''}`} onClick={() => handleSetDate(date, index)} key={index}>{date}</Cell>
+                    return <Cell className={`p-0 h-8 w-8 lg:h-10 lg:w-10 px-3 py-2 flex items-center justify-center ${( isActiveIndex === index ) ? 'pointer-events-none bg-primary text-center mx-auto text-white' : ''}`} onClick={() => handleSetDate(date, index)} key={index}>{date}</Cell>
                 })}
             </div>
         </div>
